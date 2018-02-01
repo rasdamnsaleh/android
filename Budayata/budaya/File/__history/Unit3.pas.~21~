@@ -1,0 +1,188 @@
+unit Unit3;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Edit,
+  FMX.ListBox, FMX.Layouts, FMX.StdCtrls, FMX.Gestures, FMX.TabControl,
+  System.Actions, FMX.ActnList, FMX.Media;
+
+type
+  Tmusik = class(TForm)
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    ActionList1: TActionList;
+    ChangeTabActionNext: TChangeTabAction;
+    ChangeTabActionPrev: TChangeTabAction;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    Agama: TTabItem;
+    GestureManager1: TGestureManager;
+    ListBox1: TListBox;
+    SearchBox1: TSearchBox;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    Label2: TLabel;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    Label3: TLabel;
+    ListBox2: TListBox;
+    ListBoxItem7: TListBoxItem;
+    ListBoxItem8: TListBoxItem;
+    ListBoxItem11: TListBoxItem;
+    SearchBox2: TSearchBox;
+    MediaPlayer1: TMediaPlayer;
+    Label4: TLabel;
+    Label5: TLabel;
+    stop1: TSpeedButton;
+    play2: TSpeedButton;
+    ListBoxItem9: TListBoxItem;
+    play1: TSpeedButton;
+    stop2: TSpeedButton;
+    play3: TSpeedButton;
+    stop3: TSpeedButton;
+    Button1: TButton;
+    procedure play2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure ListBoxItem7Click(Sender: TObject);
+    procedure play1Click(Sender: TObject);
+    procedure stop1Click(Sender: TObject);
+    procedure ListBoxItem8Click(Sender: TObject);
+    procedure stop2Click(Sender: TObject);
+    procedure ListBoxItem11Click(Sender: TObject);
+    procedure play3Click(Sender: TObject);
+    procedure stop3Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure ChangeTabActionPrevUpdate(Sender: TObject);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+      Shift: TShiftState);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  musik: Tmusik;
+
+implementation
+
+{$R *.fmx}
+
+uses Unit4;
+
+procedure Tmusik.Button1Click(Sender: TObject);
+begin
+  Form4.Show;
+  musik.Visible :=  false;
+end;
+
+procedure Tmusik.ChangeTabActionPrevUpdate(Sender: TObject);
+begin
+if TabControl1.TabIndex < TabControl1.TabCount -1 then
+    ChangeTabActionNext.Tab := TabControl1.Tabs[TabControl1.TabIndex + 1]
+  else
+    ChangeTabActionNext.Tab := nil;
+
+  if TabControl1.TabIndex > 0 then
+    ChangeTabActionPrev.Tab := TabControl1.Tabs[TabControl1.TabIndex - 1]
+  else
+    ChangeTabActionPrev.Tab := nil;
+end;
+
+procedure Tmusik.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  MediaPlayer1.Stop;
+end;
+
+procedure Tmusik.FormKeyUp(Sender: TObject; var Key: Word;
+var KeyChar: Char; Shift: TShiftState);
+begin
+    if Key = vkHardwareBack then
+  begin
+    if TabControl1.TabIndex > 0 then
+    begin
+      TabControl1.TabIndex := TabControl1.TabIndex - 1 mod TabControl1.TabCount;
+      Key := 0;
+    end;
+  end;
+end;
+
+procedure Tmusik.ListBoxItem11Click(Sender: TObject);
+begin
+  Label5.Text := 'Sulawesi Parasanganta.mp3';
+  play3.Visible := true;
+  stop3.Visible := true;
+  play1.Visible := false;
+  play1.Visible := false;
+  play2.Visible := false;
+  play2.Visible := false;
+  MediaPlayer1.Stop;
+end;
+
+procedure Tmusik.ListBoxItem7Click(Sender: TObject);
+begin
+  Label5.Text := 'Pakarena.mp3';
+  play1.Visible := true;
+  stop1.Visible := true;
+  play3.Visible := false;
+  stop3.Visible := false;
+  play2.Visible := false;
+  play2.Visible := false;
+  MediaPlayer1.Stop;
+end;
+
+procedure Tmusik.ListBoxItem8Click(Sender: TObject);
+begin
+  Label5.Text := 'Anging Mammiri.mp3';
+  play2.Visible := true;
+  stop2.Visible := true;
+  play3.Visible := false;
+  stop3.Visible := false;
+  play1.Visible := false;
+  stop1.Visible := false;
+  MediaPlayer1.Stop;
+end;
+
+procedure Tmusik.play1Click(Sender: TObject);
+var a : string;
+begin
+    a:='D:\Belajar Belajar\Project Android\budaya\File\Android\Debug\Project22\assets\Ana_Kukang.mp3';
+       mediaplayer1.FileName:=a;
+       mediaplayer1.play;
+
+end;
+
+procedure Tmusik.play2Click(Sender: TObject);
+var b : string;
+begin
+    b:='D:\Belajar Belajar\Project Android\budaya\File\Android\Debug\Project22\res\anakkukang.mp3';
+       mediaplayer1.FileName:=b;
+       mediaplayer1.play;
+end;
+
+procedure Tmusik.play3Click(Sender: TObject);
+var c : string;
+begin
+    c:='D:\Belajar Belajar\Project Android\budaya\File\Android\Debug\Project22\res\Sulawesiparasanganta.mp3';
+       mediaplayer1.FileName:=c;
+       mediaplayer1.play;
+end;
+
+procedure Tmusik.stop1Click(Sender: TObject);
+begin
+  MediaPlayer1.Stop;
+end;
+
+procedure Tmusik.stop2Click(Sender: TObject);
+begin
+  MediaPlayer1.Stop;
+end;
+
+procedure Tmusik.stop3Click(Sender: TObject);
+begin
+  MediaPlayer1.Stop;
+end;
+
+end.

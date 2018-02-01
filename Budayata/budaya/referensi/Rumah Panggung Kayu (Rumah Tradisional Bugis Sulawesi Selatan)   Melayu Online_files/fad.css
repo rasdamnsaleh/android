@@ -1,0 +1,43 @@
+#fa {
+	
+	text-align: center;
+	font-family: Arial,sans-serif;
+	padding: 30px 2px 2px 2px;
+	width: 276px;
+	
+	position: absolute;
+	margin: 0 auto;
+	top:100px;
+	position:fixed;
+    z-index:1300;
+	
+	display: none;
+	opacity: 0;
+	KHTMLOpacity: 0;
+	filter: alpha(opacity=1); 
+	-moz-opacity: 0;
+	z-index: 1000;	
+}
+
+#fa a {
+	text-decoration: none;
+	border: none;
+	font-size: 14px;
+	color: #333;
+}
+
+#fa img {
+	border: none;
+}
+
+#fa .fa_close {
+	position: absolute;
+	top: 8px;
+	right: 5px;
+	float:right;
+}
+
+#fa.show {
+	display: block;
+
+}

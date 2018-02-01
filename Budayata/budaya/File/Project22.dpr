@@ -1,0 +1,41 @@
+program Budayata;
+
+uses
+  System.StartUpCopy,
+  FMX.MobilePreview,
+  FMX.Forms,
+  Unit4 in 'Unit4.pas' {Form4},
+  Unit1 in 'Unit1.pas' {sekilas},
+  Unit2 in 'Unit2.pas' {tari},
+  Unit3 in 'Unit3.pas' {musik},
+  Unit5 in 'Unit5.pas' {pakaian},
+  Unit6 in 'Unit6.pas' {arsitektur},
+  Unit7 in 'Unit7.pas' {makanan},
+  Unit8 in 'Unit8.pas' {taripakarena},
+  Unit9 in 'Unit9.pas' {tarikipas},
+  Unit10 in 'Unit10.pas' {tarisirih},
+  Unit11 in 'Unit11.pas' {taripattenung},
+  Unit12 in 'Unit12.pas' {taribosara},
+  Unit13 in 'Unit13.pas' {coto},
+  Unit16 in 'Unit16.pas' {Form16};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm16, Form16);
+  Application.CreateForm(TForm4, Form4);
+  Application.CreateForm(Tsekilas, sekilas);
+  Application.CreateForm(Ttari, tari);
+  Application.CreateForm(Tmusik, musik);
+  Application.CreateForm(Tpakaian, pakaian);
+  Application.CreateForm(Tarsitektur, arsitektur);
+  Application.CreateForm(Tmakanan, makanan);
+  Application.CreateForm(Ttaripakarena, taripakarena);
+  Application.CreateForm(Ttarikipas, tarikipas);
+  Application.CreateForm(Ttarisirih, tarisirih);
+  Application.CreateForm(Ttaripattenung, taripattenung);
+  Application.CreateForm(Ttaribosara, taribosara);
+  Application.CreateForm(Tcoto, coto);
+  Application.Run;
+end.

@@ -1,0 +1,55 @@
+unit Unit2;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.ListBox,
+  FMX.Edit, FMX.Layouts, FMX.StdCtrls, FMX.Effects, FMX.Objects, FMX.Ani;
+
+type
+  Ttari = class(TForm)
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    ListBox1: TListBox;
+    SearchBox1: TSearchBox;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem5: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    Image1: TImage;
+    ShadowEffect1: TShadowEffect;
+    FloatAnimation2: TFloatAnimation;
+    procedure ListBoxItem2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  tari: Ttari;
+
+implementation
+
+{$R *.fmx}
+
+uses Unit8;
+
+procedure Ttari.ListBoxItem2Click(Sender: TObject);
+begin
+  Form8.lytForm.Height := ClientHeight+(Form8.PieForm1.Height/2);
+  Form8.lytForm.Visible := False;
+    begin
+      Form8.lytForm.Position.Y                 := -Form8.lytForm.Height;
+      Form8.FltAnimLytFormPositionY.StartValue := Form8.lytForm.Position.Y;
+      //Form8.lytForm.Parent                     := LayoutMain;
+      Form8.lytForm.Visible                    := True;
+      FloatAnimation2.Start;
+      Form8.FltAnimLytFormPositionY.Start
+    end;
+end;
+
+end.

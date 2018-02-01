@@ -1,0 +1,138 @@
+/* CSS Document */
+body {
+	background-color: #FFFFFF;
+	background-image: url(./../images/bg_sea.jpg);
+	background-repeat: repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+#ja-wrapper {
+	padding: 0px 0px 0px;
+	width: 990px;
+	margin: 0 auto;
+	margin:auto;
+}
+
+#ja-mainbody {
+	width: 990px;
+	padding-left:0px;
+	margin-left:0px;
+
+}
+
+/* HEADER
+--------------------------------------------------------- */
+#ja-header {
+	height: 156px;
+	line-height: normal;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+}
+
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnav {
+	background: url(../images/bg_menu.png) repeat;
+	position: relative;
+	height: 31px;
+	line-height: normal;
+	z-index: 1000;
+
+}
+
+/* FOOTER
+--------------------------------------------------------- */
+#ja-footer {
+	color: #626A69;
+	padding: 10px 0px 0px;
+	position:relative; 
+	text-align: center;
+	height: 100px;
+}
+
+/* Clearfix */
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.style2 {color: #FFFFFF; 
+	font-weight:600;
+	font-size: 17px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.style14 {font-size: 14px}
+.style16 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; }
+.style16-a a {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000033; text-decoration:none}
+.style20 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFF00; }
+.style20-a a {font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #FFFF00; text-decoration:none; }
+.style21 {color: #000033}
+.style22 {font-size: 10px}
+.style26 {font-family: Arial, Helvetica, sans-serif}
+.style27 {font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #339966; }
+.style28 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #009900; }
+.style30 {color: #006600}
+.style31 {color: #339966}
+.style32 {color: #006666}
+.style37 {color: #003366; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.style38 {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style43 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+}
+.style40 {font-size: 20px}
+.style42 {
+	color: #990000;
+	font-size: 24px;
+}
+.style43 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+}
+.font_title {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size: 12px;
+	font-weight:700;
+}
+
+.box250 {width:200px; padding:0 0 5px 0; background:url(./../images/box_base.gif) no-repeat left bottom; margin-bottom:10px;}
+.box250 h3 {background:url(./../images/box.gif); height:32px; line-height:30px; color:#333; padding:0 15px; margin:0; font-size:11px; font-weight:700; font-family:Verdana, Geneva, sans-serif}
+.box250 h3.blank {background:url(sbox.gif); height:30px; line-height:30px; color:#333; padding:0 15px; margin:0; font-size:12px;}
+.box250 ul {list-style:none; padding:15px 14px 0 14px; margin:0; width:220px; background:#fff; border:1px solid #d8d9da; border-width:0 1px; height:auto;}
+.box250 ul li {text-decoration:none; color:#444; padding:2px 0; font-size:11px; border-bottom:1px solid #f0f0f0; word-spacing:-1px;}
+.box250 ul li a {text-decoration:none; color:#048; font-size:12px; font-weight:bold;}
+.box250 ul li a:hover {text-decoration:underline;}
+
+.box250 p {padding:15px 14px 0 14px; margin:0; width:220px; background:#fff; border:1px solid #d8d9da; border-width:0 1px; line-height:1.3em; font-size:11px; color:#444;}
+.box250 p.red {color:#c00;}
+.box250 dl {list-style:none; padding:0 14px; margin:0; width:220px; background:#fff; border:1px solid #d8d9da; border-width:0 1px;}
+.box250 dt {clear:left; padding:10px 0; margin:0; font-size:12px; font-weight:bold; color:#151;}
+.box250 dd {padding:3px 0; margin:0; font-size:11px; line-height:1.2em; color:#444; border-bottom:1px solid #f0f0f0;}
+.box250 dd a {display:block; color:#048; text-decoration:none; width:220px; font-size:12px;}
+.box250 dd a em {color:#666; float:right; font-style:normal; font-size:11px;}
+.box250 dd a:hover {color:#08c; text-decoration:none;}
+
+.box250 table caption {width:200px; background:url(./../images/box.gif); height:30px; line-height:30px; color:#333; padding:0; margin:0; font-size:12px; text-align:left; text-indent:15px; font-weight:bold;}
+.box250 table {width:198px; border:0px solid #d8d9da; border-width:0 0px; background:#fff;}
+.box250 table th {padding-top:5px; text-indent:5px; color:#151;}
+.box250 table td {text-indent:5px; color:#444;}
+.box250 table tfoot td {text-align:center; color:#666; font-size:11px; padding-top:10px;}
+
+.box250 form {margin:0;}
+
+.box250 a.bannerad img {display:block; padding-bottom:4px;}
+

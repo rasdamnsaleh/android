@@ -1,0 +1,358 @@
+.ddsmoothmenu{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight:bold;
+width: 900px;
+color: #FFF;
+position:absolute;
+margin-top: -15px;
+background-color:#09F;
+}
+
+.ddsmoothmenu2{
+font: bold 12px Verdana;
+background-color:#09F;
+border-right: 1px solid #778;
+border-left: 1px solid #778;
+color: black;
+text-decoration:none
+}
+
+.ddsmoothmenu20{
+font: bold 12px Verdana;
+background-color:#09F;
+color: #003;
+border-right: 1px solid #778;
+color: black;
+text-decoration:none
+}
+
+.ddsmoothmenu21{
+font: bold 12px Verdana;
+background-color:#09F;
+color: #003;
+color: black;
+text-decoration:none
+}
+
+
+.ddsmoothmenu ul{
+z-index:10000;
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.ddsmoothmenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a{
+display: block;
+padding: 6px 25px;
+border-right: 0px solid #778;
+color:#FFF;
+text-decoration:none;
+background-color:#09F;
+}
+
+* html .ddsmoothmenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+color: #fff;
+}
+
+.ddsmoothmenu ul li a.selected{ /*CSS class that's dynamically added to the currently active menu items' LI A element*/
+background: #069; 
+color: #fff;
+}
+
+.ddsmoothmenu ul li a:hover{
+	/*background of menu items during onmouseover (hover state)*/
+	color: #fff;
+	background-color: #069;
+}
+	
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul{
+position: absolute;
+left: 0;
+display: none; /*collapse all sub menus to begin with*/
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a{
+font: normal 13px Verdana;
+width: 160px; /*width of sub menus*/
+padding: 5px;
+margin: 0;
+border-top: 1px solid #999;
+}
+
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu{height: 1%;} /*Holly Hack for IE7 and below*/
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 9px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow{ /*shadow for NON CSS3 capable browsers*/
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 0;
+background: silver;
+}
+
+.toplevelshadow{ /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+opacity: 0.8;
+}
+
+#global {
+	height: 30px;
+	margin-bottom:25px;
+	font: bold 12px Verdana;	
+	color:#000000;	
+}
+
+#global .wrap {  
+	width: 983px;  
+	margin:0px auto;	
+}
+
+
+#global ul { 
+	list-style: none; 
+	margin: 0; 
+	padding: 0;	
+	float:left;
+}
+
+#global li { 
+	float: left; 
+	margin: 0; 
+	padding: 0; 
+	text-indent: 0; 
+}
+
+#global_fp, #global_jt { 
+	float: left; 
+	height: 34px; 
+	width:275px;
+	overflow: hidden; 
+	text-indent: -999em; 	
+	background:#fff url(../img/global/main.png) no-repeat 0 -40px;
+}	
+
+#global_fp:hover 	{ background-position: 0 -80px;  }
+#global_fp:focus	{ background-position: 0 -120px; }
+#global_fp.active	{ background-position: 0 -160px;	cursor: default; }
+
+#global_jt 			{ background-position:-275px -40px;  }
+#global_jt:hover 	{ background-position:-275px -80px;  }
+#global_jt:focus  	{ background-position:-275px -120px; }
+#global_jt.active 	{ background-position:-275px -160px; cursor: default; }
+
+
+#gsearch {
+	margin-top:3px;
+	float:right;		
+}
+
+#gsearch input {
+	border:0;
+	background:transparent url(../img/global/main.png) no-repeat scroll -9px -237px;
+	width:125px;
+	padding:4px 10px;
+	font-size:11px;
+	outline: none;
+	position:relative;
+	top:1px;
+}
+
+#gsearch input:focus {
+	background-position:-9px -207px;	
+}
+
+#gsearch button {
+	border:0;
+	background: transparent url(../img/global/main.png) no-repeat scroll -8px -263px;
+	text-indent:-999em;
+	width:78px;
+	height:23px;
+	outline:none !important;
+}
+
+#gsearch button:hover {
+	background-position:-8px -293px;
+}
+ 
+#gsearch button:focus {
+	background-position:-8px -323px;
+}
+
+#remember {
+	width:15px;
+	padding:0px;
+	background-color:transparent;
+	position:relative;
+	top:1px;
+}
+
+
+
+.acc {
+	position:relative;
+}
+
+.acc a {
+	font-size:12px;	
+	padding:8px 8px;
+	display:block;
+	text-decoration:none;
+	color:#000 !important;
+	border-left: 1px solid #778;	 
+}
+
+.acc a:hover, .acc a.active {
+	background: #dfc01a; /*background of menu items during onmouseover (hover state)*/
+	color:yellow;
+}
+
+.account {
+	background:#dfc01a url(../img/global/gradient/h150_reverse.png);
+	_background-image:none;
+	padding:0 10px;
+	width:140px;
+	float:left;
+	margin-right:15px;	
+	
+	-moz-border-radius:10px;
+	-moz-border-radius-topleft:0;
+	-moz-border-radius-topright:0;	
+	-moz-box-shadow:0 0 13px 0 #333;
+	
+	-webkit-border-radius:10px;
+	-webkit-border-top-right-radius:0;
+	-webkit-border-top-left-radius:0;	
+	-webkit-box-shadow: 0 0 13px #000;		
+}
+
+#signup {
+	display:none;
+	background-position: 0 77px;
+	z-index:2;
+}
+
+.account, .account a {
+	font-size:11px !important;
+	color:#000;			
+	text-decoration:none;
+}
+
+.account a:hover {
+	text-decoration:underline;	
+}
+
+.account input {
+	font-size:10px;
+	border:1px solid #999;	
+	padding:2px 6px;
+	background-color:#ddd;
+	color:#666;
+	width:125px;
+	outline:none;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;	
+}
+
+.account input:focus {
+	background-color:#fff;
+	color:#000;
+}
+
+.account button {
+	border:1px solid #000;
+	background:#FFCC33;
+	-moz-border-radius:3px;
+	font-size:10px;
+	color:#000000;
+	cursor:pointer;
+	height:20px;
+	padding-top:0px;
+	padding-bottom:10px;
+}
+
+.account p {
+	margin:8px 0;
+	font-size:10px !important;
+}
+
+.account .error {
+	padding:5px 10px;			
+	width:140px;
+	margin:1px -10px;
+	color:#fff;
+	background:#c10;
+	display:none;
+	
+	-moz-border-radius-bottomleft:8px;
+	-moz-border-radius-bottomright:8px;
+	-webkit-border-radius-bottom-left:8px;
+	-webkit-border-radius-bottom-right:8px;
+}
+
+
+#loginscroll {
+	position:relative;
+	height:190px;
+	overflow:hidden;
+	width:165px;
+	display:none;
+	z-index:2;
+	margin-left: -37px;
+	margin-top: 10px;
+}
+
+#loginscroll div {
+	position:absolute;
+	width:999em;	
+}
+
+.account label {
+	cursor:pointer;
+	display:block;	
+}
+

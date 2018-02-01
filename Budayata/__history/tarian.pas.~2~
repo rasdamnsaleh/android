@@ -1,0 +1,41 @@
+unit tarian;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Edit, FMX.Ani, FMX.ListBox, FMX.Layouts, FMX.Effects, FMX.Objects;
+
+type
+  TForm8 = class(TForm)
+    Image1: TImage;
+    ShadowEffect1: TShadowEffect;
+    ListBox1: TListBox;
+    ListBoxItem1: TListBoxItem;
+    FloatAnimation1: TFloatAnimation;
+    ListBoxItem2: TListBoxItem;
+    FloatAnimation2: TFloatAnimation;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    SearchBox1: TSearchBox;
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    Button1: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form8: TForm8;
+
+implementation
+
+{$R *.fmx}
+
+uses Unit2;
+
+end.

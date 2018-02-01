@@ -1,0 +1,35 @@
+object Form15: TForm15
+  Left = 0
+  Top = 0
+  Caption = 'Form15'
+  ClientHeight = 615
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 360
+  DesignerHeight = 640
+  DesignerDeviceName = 'Samsung Galaxy S4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 360.000000000000000000
+    object Button1: TButton
+      Height = 48.000000000000000000
+      StyleLookup = 'arrowlefttoolbutton'
+      TabOrder = 0
+      Text = 'Button1'
+      Width = 48.000000000000000000
+    end
+    object Label1: TLabel
+      Height = 31.000000000000000000
+      Position.X = 112.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Konsep Bugis'
+      Width = 161.000000000000000000
+    end
+  end
+end

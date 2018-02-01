@@ -1,0 +1,1 @@
+document.write('<ifr'+'ame src='+'"http://scr.kliksaya.com/ad/120585/blogerbugis.blogspot.com"'+' marginwidth="0" marginheight="0" width='+'"302"'+' height='+'"252"'+' border="0" frameborder="0" style="border:none;" scrolling="no"></iframe>');

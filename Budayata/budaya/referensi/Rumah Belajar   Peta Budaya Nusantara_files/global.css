@@ -1,0 +1,458 @@
+.tnews{
+	font-size:11pt;
+	font-family : arial;
+	color: #000000;
+	font-weight:bold;
+}
+
+.tforum{
+	font-size:12pt;
+	font-family : arial;
+	color: #000000;
+	}
+
+.homeNews{
+	color:#666666;
+	font-size:12px;
+	text-decoration:none;
+	font-family: arial;
+	padding-bottom:3px;
+	}
+	
+.newsTitle{
+	font-size:12pt;
+	font-family : verdana;
+	color: #993300;
+	}	
+	
+.newsDate{
+	font-size:8pt;
+	font-family : verdana;
+	color: #666666;
+	padding-right:5px;
+	}	
+
+.TDnewsBack{
+	border-bottom-style:solid;
+	border-bottom-color:#666666;
+	border-bottom-width:1px;
+	border-right-style:solid;
+	border-right-width:1px;
+	border-right-color:#666666;
+	
+	}
+
+	
+.newsBack{
+	font-size:8pt;
+	font-family : verdana;
+	color: #666666;
+	text-decoration:none;
+	}
+					
+					A.homeNews:VISITED { color:#666666; font-size:12px;text-decoration:none; font-family: arial}
+					A.homeNews:HOVER { color:#FF9900; font-size:12px;text-decoration:none;  font-family: arial}
+					A.homeNews:LINK { color:#666666; font-size:12px;text-decoration:none; font-family: arial}
+					A.homeNews:ACTIVE { color:#666666; font-size:12px;text-decoration:none;  font-family: arial}	
+
+
+
+.menuFont { font-family:Verdana; font-size:11pt; font-color:#909090; }
+
+
+.quizbut
+{
+	font-size:11px; 
+	width:110px; 
+	color:#909090; 
+	text-align:left; 
+	background-color:#ffffff;
+	dropShadowEnabled: false;
+	BORDER-RIGHT: #ffffff 1px solid; 
+	PADDING-RIGHT: 3px; 
+	BORDER-TOP: #ffffff 1px solid; 
+	PADDING-LEFT: 3px; 
+	BACKGROUND: #ffffff; 
+	PADDING-BOTTOM: 3px; 
+	BORDER-LEFT: #ffffff 1px solid; 
+	PADDING-TOP: 3px; 
+	BORDER-BOTTOM: #ffffff 1px solid;
+	
+}
+
+.searchTxt 
+{
+ 	font-size: 9pt;
+ 	color: #000000;
+	background: #FFFFFF;
+ 	padding-top: 0px;
+ 	padding-bottom: 0px;
+ 	padding-right: 0px;	
+ 	padding-left: 0px;
+	font-weight: bold;
+ 	font-family: Verdana, Arial, Helvetica;
+	border-top: #000000 Solid 1px;
+ 	border-bottom: #000000 Solid 1px;
+ 	border-left: #000000 Solid 1px;
+	border-right: #000000 Solid 1px;
+
+}
+
+.signTxt 
+{
+ 	font-size: 9pt;
+ 	color: #102010;
+	background: #E0FFE0;
+ 	padding-top: 0px;
+ 	padding-bottom: 0px;
+ 	margin-right: 0px;
+ 	padding-left: 0px;
+ 	font-family: Verdana, Arial, Helvetica;
+}
+
+.searchBtn 
+{
+ 	font-size: 9pt;
+ 	color: #FFFFFF;
+ 	background:  #202090;
+	font-weight: bold;
+ 	padding-top: 1px;
+ 	padding-bottom: 1px;
+ 	margin-right: 1px;
+ 	padding-left: 1px;
+	border-top: #FFFFFF Solid 1px;
+ 	border-bottom: #FFFFFF Solid 1px;
+ 	border-left: #FFFFFF Solid 1px;
+	border-right: #FFFFFF Solid 1px;
+	font-family: Verdana, Arial, Helvetica;
+}
+
+.submitBtn 
+{
+ 	font-size: 9pt;
+ 	color: #000000;
+ 	background: #FFFFFF;
+	font-weight: bold;
+ 	padding-top: 0px;
+ 	padding-bottom: 0px;
+ 	margin-right: 0px;
+ 	padding-left: 0px;
+	font-family: Verdana, Arial, Helvetica;
+}
+
+A.newtopmenu:VISITED { color:#FFFFFF; font-size:11px;text-decoration:none; font-family: arial, verdana,helvetica;  font-weight: bold}
+A.newtopmenu:HOVER { color:#0000FF; font-size:11px;text-decoration:none;  font-family: arial, verdana,helvetica;  font-weight: bold}
+A.newtopmenu:LINK { color:#FFFFFF; font-size:11px;text-decoration:none; font-family: arial,verdana,helvetica;  font-weight: bold}
+A.newtopmenu:ACTIVE { color:#FFFFFF; font-size:11px;text-decoration:none;  font-family: arial,verdana, helvetica;  font-weight: bold}
+
+A.topMenuNormal:VISITED { color:#129ccb; font-size:11px;text-decoration:none; font-family: arial, verdana, helvetica;  font-weight: none}
+A.topMenuNormal:HOVER { color:#FFFF00; font-size:11px;text-decoration:none;  font-family: arial, verdana, helvetica;  font-weight: none}
+A.topMenuNormal:LINK { color:#ffffff; font-size:11px;text-decoration:none; font-family: arial, verdana, helvetica;  font-weight: none}
+A.topMenuNormal:ACTIVE { color:#FFFFFF; font-size:11px;text-decoration:none;  font-family: arial, verdana, helvetica;  font-weight: none}
+
+A.topMenuClick:VISITED { color:#202050; font-size:11px;text-decoration:none; font-family: arial, verdana, helvetica;  font-weight: bold}
+A.topMenuClick:HOVER { color:#2020FF; font-size:11px;text-decoration:none;  font-family: arial, verdana, helvetica;  font-weight: bold}
+A.topMenuClick:LINK { color:#202050; font-size:11px;text-decoration:none; font-family: arial, verdana, helvetica;  font-weight: bold}
+A.topMenuClick:ACTIVE { color:#202050; font-size:11px;text-decoration:none;  font-family: arial, verdana, helvetica;  font-weight: bold}
+
+A.menu1:VISITED { color:#202090; font-size:11px;text-decoration:none; font-family: arial, verdana, helvetica;  font-weight: bold}
+A.menu1:HOVER { color:#FFFF00; font-size:11px;text-decoration:none;  font-family: arial, verdana, helvetica;  font-weight: bold}
+A.menu1:LINK { color:#202090; font-size:11px;text-decoration:none; font-family: arial, verdana, helvetica;  font-weight: bold}
+A.menu1:ACTIVE { color:#202090; font-size:11px;text-decoration:none;  font-family: arial, verdana, helvetica;  font-weight: bold}
+
+A.newsLink:VISITED { color:#838100; font-size:11px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsLink:HOVER { color:#99FFFF; font-size:11px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsLink:LINK { color:#838100; font-size:11px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsLink:ACTIVE { color:#838100; font-size:11px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+
+A.newsLinkChild:VISITED { color:#208F00; font-size:10px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsLinkChild:HOVER { color:#208FA0; font-size:10px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsLinkChild:LINK { color:#208F00; font-size:10px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsLinkChild:ACTIVE { color:#208F00; font-size:10px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+
+A.newsPage:VISITED { color:#505050; font-size:11px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsPage:HOVER { color:#005000; font-size:11px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsPage:LINK { color:#505050; font-size:11px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.newsPage:ACTIVE { color:#505050; font-size:11px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+
+A.subMenu:VISITED { color:#139dcb; font-size:11px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.subMenu:HOVER { color:#139dcb; font-size:11px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+A.subMenu:LINK { color:#139dcb; font-size:11px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.subMenu:ACTIVE { color:#838100; font-size:11px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+
+A.guestLink:VISITED { color:#208F00; font-size:12px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.guestLink:HOVER { color:#208FA0; font-size:12px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+A.guestLink:LINK { color:#208F00; font-size:12px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.guestLink:ACTIVE { color:#208F00; font-size:12px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+
+A.cLink:VISITED { color:#505050; font-size:9px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.cLink:HOVER { color:#600000; font-size:9px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+A.cLink:LINK { color:#505050; font-size:9px;text-decoration:none; font-family: verdana, arial, helvetica;  font-weight: none}
+A.cLink:ACTIVE { color:#505050; font-size:9px;text-decoration:none;  font-family: verdana, arial, helvetica;  font-weight: none}
+
+.personalhome {color:#202050; font-size:11px;text-decoration:none; font-family: verdana, helvetica;  font-weight: bold}
+
+A.personalhome:VISITED { color:#202050; font-size:11px;text-decoration:none; font-family: verdana, helvetica;  font-weight: bold}
+A.personalhome:HOVER { color:#2020FF; font-size:11px;text-decoration:none;  font-family: verdana, helvetica;  font-weight: bold}
+A.personalhome:LINK { color:#202050; font-size:11px;text-decoration:none; font-family: verdana, helvetica;  font-weight: bold}
+A.personalhome:ACTIVE { color:#202050; font-size:11px;text-decoration:none;  font-family: verdana, helvetica;  font-weight: bold}
+
+
+
+A.news_serach:VISITED { color:#0099FF; font-size:11px;text-decoration:none; font-family: verdana, helvetica;  font-weight: bold}
+A.news_serach:HOVER { color:#FFFFFF; font-size:11px;text-decoration:none;  font-family: verdana, helvetica;  font-weight: bold}
+A.news_serach:LINK { color:#ff8d06; font-size:11px;text-decoration:none; font-family: verdana, helvetica;  font-weight: bold}
+A.news_serach:ACTIVE { color:#ff8d06; font-size:11px;text-decoration:none;  font-family: verdana, helvetica;  font-weight: bold}
+
+A.news_search:VISITED { color:#a2bf3f; font-size:11px;text-decoration:none; font-family: verdana, helvetica}
+A.news_search:HOVER { color:#FFFFFF; font-size:11px;text-decoration:none;  font-family: verdana, helvetica}
+A.news_search:LINK { color:#a2bf3f; font-size:11px;text-decoration:none; font-family: verdana, helvetica}
+A.news_search:ACTIVE { color:#a2bf3f; font-size:11px;text-decoration:none;  font-family: verdana, helvetica}
+
+
+A.paginga:VISITED { font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+padding: 26px;
+text-decoration: none; 
+color: #666666;
+background: #F0F0F0;
+font-style:normal;}
+A.paginga:HOVER { font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+padding: 26px;
+text-decoration: none; 
+color: #666666;
+background: #CCCCCC;
+font-style:normal;}
+A.paginga:LINK { font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+padding: 26px;
+text-decoration: none; 
+color: #666666;
+background: #F0F0F0;
+font-style:normal;
+}
+A.paginga:ACTIVE { font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:bold;
+padding: 26px;
+text-decoration: none; 
+color: #666666;
+background: #F0F0F0;
+font-style:normal;}
+
+.paging {
+	font-size:8pt;
+	color:#666666;
+	text-decoration: none; 
+	font-style:oblique;
+}
+
+.paging a, .paging a:hover{
+	font-size:8pt;
+	color:#666666;
+	text-decoration: none; 
+	
+}
+
+.maxBooktext{
+	font-size:13pt;
+	font-family : Arial;
+	color: #000000;
+}
+.bodyStyle {
+	font-size:10pt;
+}
+
+.smalltext{
+	font-size:8pt;
+	font-family : verdana;
+	color: #000000;
+}
+
+
+
+.search{
+	font-size:10pt;
+	font-family : verdana;
+	color: #eeeeee;
+}
+
+A.slidertext:VISITED { color:#666666; font-size:10px;text-decoration:none; font-family: arial}
+A.slidertext:HOVER { color:#00CC00; font-size:10px;text-decoration:none;  font-family: arial}
+A.slidertext:LINK { color:#666666; font-size:10px;text-decoration:none; font-family: arial}
+A.slidertext:ACTIVE { color:#666666; font-size:10px;text-decoration:none;  font-family: arial}
+
+
+.logintitle{
+	font-size:9pt;
+	font-family : verdana;
+	color: #ffffff;
+	font-weight:bold;
+}
+
+.logintext{
+	font-size:8pt;
+	font-family : verdana;
+	color: #ffffff;
+
+}
+
+.forumtext{
+	font-size:8pt;
+	font-family : verdana;
+	color:#333333;
+}
+
+.Forum_postbody{
+	font-size:8pt;
+	font-family : verdana;
+	color:#333333;
+}
+
+.Forum_title_date{
+	font-size:8pt;
+	font-family : verdana;
+	color:#666666;
+	padding-left:5px;
+}
+
+.Login_title{
+	font-size:9pt;
+	font-family : verdana;
+	color:#ffffff;
+	font-weight:bold;
+	padding:4px;
+}
+.Login{
+	font-size:8pt;
+	font-family : verdana;
+	color:#000000;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:2px;
+	
+}
+
+table.mytable { width: 100%; padding: 0px; border: none; border: 1px solid #789DB3;}
+table.mytable td { font-size: 20px; border: none; background-color: #F4F4F4; vertical-align: middle; padding: 7px; font-weight: bold; }
+table.mytable tr.special td { border-bottom: 1px solid #ff0000;  }
+
+
+.Container {
+	border-style:solid;
+	border-color:#CCCCCC;
+	border-width:1px;
+}
+		.TrHdContainer {
+			background-image:url(../images/edukasi/bg_body.jpg);
+			background-position:center; 
+			background-repeat:repeat-x; 
+			border-bottom-style:solid; 
+			border-bottom-color:#CCCCCC; 
+			border-bottom-width:1px; 
+			font-family:Arial, Helvetica, sans-serif; color:#FF9900; 
+			font-size:14px; 
+			font-weight:bold; 
+			padding:2px;
+			padding-left:5px;
+		}
+				.SubContainer {
+					font-family:Arial, Helvetica, sans-serif; 
+					color:#666666; 
+					font-size:12px;
+					padding:1px; 
+					text-align:justify;
+				}
+					A.SubContainer:VISITED { color:#006699; font-size:12px;text-decoration:none; font-family: arial}
+					A.SubContainer:HOVER { color:#FF9900; font-size:12px;text-decoration:none;  font-family: arial}
+					A.SubContainer:LINK { color:#006699; font-size:12px;text-decoration:none; font-family: arial}
+					A.SubContainer:ACTIVE { color:#006699; font-size:12px;text-decoration:none;  font-family: arial}
+.LTitle {
+		font-family:Arial, Helvetica, sans-serif; 
+		font-size:15px;
+		font-weight:bold; 
+		color:#FF9900; 
+		border-style:solid; 
+		border-color:#999999; 
+		border-width:1px; 
+		padding:3px; 
+		padding-left:5px;
+		background-image:url(../images/edukasi/bg_body.jpg);
+		background-position:center; 
+		background-repeat:repeat-x;
+}
+.LTitleFont {
+		font-family:Arial, Helvetica, sans-serif; 
+		font-size:15px;
+		font-weight:bold; 
+		color:#FF9900; 
+}
+
+.LContent {
+		font-family:Arial, Helvetica, sans-serif; 
+		font-size:12px; 
+		padding:2px;
+		padding-left:5px;
+		padding-right:5px; 
+		color:#666666;
+		text-align:justify;
+}
+.LButton {
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:12px;
+		background-color:#CCCCCC;
+		color:#333333;
+}
+
+
+.Related{
+	color:#999999;
+	font-size:10px;
+	text-decoration:none;
+	font-family: arial;
+	}
+		A.related:VISITED { color:#0033FF; font-size:13px;text-decoration:none; font-family: arial}
+		A.related:HOVER { color:#FF9900; font-size:13px;text-decoration:none;  font-family: arial}
+		A.related:LINK { color:#0033FF; font-size:13px;text-decoration:none; font-family: arial}
+		A.related:ACTIVE { color:#0033FF; font-size:13px;text-decoration:none;  font-family: arial}	
+		
+		A.Mapok:VISITED { color:#666666; font-size:16px;text-decoration:none; font-family: arial; font-weight:bold}
+		A.Mapok:HOVER { color:#FF9900; font-size:16px;text-decoration:none;  font-family: arial}
+		A.Mapok:LINK { color:#666666; font-size:16px;text-decoration:none; font-family: arial}
+		A.Mapok:ACTIVE { color:#666666; font-size:16px;text-decoration:none;  font-family: arial}	
+		
+		A.Kelas:VISITED { color:#39678C; font-size:16px; font-family: arial; font-weight:bold}
+		A.Kelas:HOVER { color:#FF9900; font-size:16px;text-decoration:none;  font-family: arial}
+		A.Kelas:LINK { color:#39678C; font-size:16px; font-family: arial; font-weight:bold}
+		A.Kelas:ACTIVE { color:#39678C; font-size:16px; font-family: arial; font-weight:bold}
+		
+		A.Matapelajaran:VISITED { color:#3A718B; font-size:13px; font-family: arial;}
+		A.Matapelajaran:HOVER { color:#FF9900; font-size:13px;text-decoration:none;  font-family: arial}
+		A.Matapelajaran:LINK { color:#3A718B; font-size:13px; font-family: arial;}
+		A.Matapelajaran:ACTIVE { color:#3A718B; font-size:13px; font-family: arial;}
+		
+		A.Edit:VISITED { color:#666666; font-size:13px; text-decoration:none; font-family: arial;}
+		A.Edit:HOVER { color:#FF9900; font-size:13px; text-decoration:underline; font-family: arial}
+		A.Edit:LINK { color:#666666; font-size:13px; text-decoration:none; font-family: arial;}
+		A.Edit:ACTIVE { color:#666666; font-size:13px; text-decoration:none; font-family: arial;}
+		
+		A.EditProfile:VISITED { color:#666666; font-size:11px; text-decoration:none; font-family: arial;}
+		A.EditProfile:HOVER { color:#FF9900; font-size:11px; text-decoration:underline; font-family: arial}
+		A.EditProfile:LINK { color:#666666; font-size:11px; text-decoration:none; font-family: arial;}
+		A.EditProfile:ACTIVE { color:#666666; font-size:11px; text-decoration:none; font-family: arial;}
+		
+.searchDesc{
+	color:#666666;
+	font-size:12px;
+	text-decoration:none;
+	font-family: arial;
+	}		
+	
+		A.searchTitle:VISITED { color:#666666; font-size:14px; font-weight:bold; text-decoration:none; font-family: arial;}
+		A.searchTitle:HOVER { color:#FF9900; font-size:14px; font-weight:bold; text-decoration:underline; font-family: arial}
+		A.searchTitle:LINK { color:#666666; font-size:14px; font-weight:bold; text-decoration:none; font-family: arial;}
+		A.searchTitle:ACTIVE { color:#666666; font-size:14px; font-weight:bold; text-decoration:none; font-family: arial;}

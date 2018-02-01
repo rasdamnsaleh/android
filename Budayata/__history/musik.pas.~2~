@@ -1,0 +1,139 @@
+unit musik;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Edit, FMX.ListBox, FMX.Layouts, FMX.TabControl, FMX.Media;
+
+type
+  TForm4 = class(TForm)
+    MediaPlayer1: TMediaPlayer;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    ListBox1: TListBox;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    SearchBox1: TSearchBox;
+    Label2: TLabel;
+    Agama: TTabItem;
+    Label3: TLabel;
+    ListBox2: TListBox;
+    ListBoxItem7: TListBoxItem;
+    ListBoxItem8: TListBoxItem;
+    ListBoxItem11: TListBoxItem;
+    ListBoxItem9: TListBoxItem;
+    SearchBox2: TSearchBox;
+    Label4: TLabel;
+    Label5: TLabel;
+    stop1: TSpeedButton;
+    play2: TSpeedButton;
+    play1: TSpeedButton;
+    stop2: TSpeedButton;
+    play3: TSpeedButton;
+    stop3: TSpeedButton;
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    Button1: TButton;
+    procedure play3Click(Sender: TObject);
+    procedure ListBoxItem11Click(Sender: TObject);
+    procedure ListBoxItem7Click(Sender: TObject);
+    procedure ListBoxItem8Click(Sender: TObject);
+    procedure play1Click(Sender: TObject);
+    procedure play2Click(Sender: TObject);
+    procedure stop3Click(Sender: TObject);
+    procedure stop1Click(Sender: TObject);
+    procedure stop2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm4.ListBoxItem11Click(Sender: TObject);
+begin
+  Label5.Text := 'Sulawesi Parasanganta.mp3';
+  play3.Visible := true;
+  stop3.Visible := true;
+  play1.Visible := false;
+  play1.Visible := false;
+  play2.Visible := false;
+  play2.Visible := false;
+  MediaPlayer1.Stop;
+end;
+
+procedure TForm4.ListBoxItem7Click(Sender: TObject);
+begin
+  Label5.Text := 'Pakarena.mp3';
+  play1.Visible := true;
+  stop1.Visible := true;
+  play3.Visible := false;
+  stop3.Visible := false;
+  play2.Visible := false;
+  play2.Visible := false;
+  MediaPlayer1.Stop;
+end;
+
+procedure TForm4.ListBoxItem8Click(Sender: TObject);
+begin
+Label5.Text := 'Anging Mammiri.mp3';
+  play2.Visible := true;
+  stop2.Visible := true;
+  play3.Visible := false;
+  stop3.Visible := false;
+  play1.Visible := false;
+  stop1.Visible := false;
+  MediaPlayer1.Stop;
+end;
+
+procedure TForm4.play1Click(Sender: TObject);
+var a : string;
+begin
+    a:='D:\PROGRAMMER\Budayata\Pakarena_-_Makassar.mp3';
+       mediaplayer1.FileName:=a;
+       mediaplayer1.play;
+
+end;
+
+procedure TForm4.play2Click(Sender: TObject);
+var b : string;
+begin
+    b:='D:\Belajar Belajar\Project Android\budaya\File\Android\Debug\Project22\res\anakkukang.mp3';
+       mediaplayer1.FileName:=b;
+       mediaplayer1.play;
+end;
+
+procedure TForm4.play3Click(Sender: TObject);
+var c : string;
+begin
+    c:='D:\Belajar Belajar\Project Android\budaya\File\Android\Debug\Project22\res\Sulawesiparasanganta.mp3';
+       mediaplayer1.FileName:=c;
+       mediaplayer1.play;
+end;
+
+procedure TForm4.stop1Click(Sender: TObject);
+begin
+MediaPlayer1.Stop;
+end;
+
+procedure TForm4.stop2Click(Sender: TObject);
+begin
+MediaPlayer1.Stop;
+end;
+
+procedure TForm4.stop3Click(Sender: TObject);
+begin
+MediaPlayer1.Stop;
+end;
+
+end.

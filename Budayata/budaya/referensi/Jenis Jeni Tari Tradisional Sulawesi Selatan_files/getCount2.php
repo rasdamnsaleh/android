@@ -1,0 +1,1 @@
+(function(){stButtons.processCB({"yahoo":29,"google":8558,"clicks_total":8592,"blogger":5,"total":8592,"shares":[],"url":"http:\/\/kuliah-seni.blogspot.com\/2013\/09\/jenis-jeni-tari-tradisional-sulawesi.html","ourl":"http:\/\/kuliah-seni.blogspot.com\/2013\/09\/jenis-jeni-tari-tradisional-sulawesi.html#sthash.nkQwpTFN"})})();

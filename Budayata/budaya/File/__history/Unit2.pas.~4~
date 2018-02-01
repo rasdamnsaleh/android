@@ -1,0 +1,43 @@
+unit Unit2;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.ListBox,
+  FMX.Edit, FMX.Layouts, FMX.StdCtrls, FMX.Effects, FMX.Objects;
+
+type
+  Ttari = class(TForm)
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    ListBox1: TListBox;
+    SearchBox1: TSearchBox;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem5: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    Image1: TImage;
+    ShadowEffect1: TShadowEffect;
+    procedure BtBackClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  tari: Ttari;
+
+implementation
+
+{$R *.fmx}
+
+procedure Ttari.BtBackClick(Sender: TObject);
+begin
+  FltAnimLytFormPositionY.Start;
+end;
+
+end.

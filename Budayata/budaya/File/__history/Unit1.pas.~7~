@@ -1,0 +1,88 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.StdCtrls, FMX.TabControl, System.Actions, FMX.ActnList, FMX.Gestures;
+
+type
+  Tsekilas = class(TForm)
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    GestureManager1: TGestureManager;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    Agama: TTabItem;
+    TabItem2: TTabItem;
+    Image1: TImage;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    ActionList1: TActionList;
+    ChangeTabActionNext: TChangeTabAction;
+    ChangeTabActionPrev: TChangeTabAction;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label5: TLabel;
+    Button1: TButton;
+    procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+      Shift: TShiftState);
+    procedure ChangeTabActionPrevUpdate(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  sekilas: Tsekilas;
+
+implementation
+
+{$R *.fmx}
+
+uses Unit4;
+
+procedure Tsekilas.Button1Click(Sender: TObject);
+begin
+  Form4.Show;
+  sekilas.Visible := false;
+end;
+
+procedure Tsekilas.Button2Click(Sender: TObject);
+begin
+  Form4.Show;
+end;
+
+procedure Tsekilas.ChangeTabActionPrevUpdate(Sender: TObject);
+begin
+   if TabControl1.TabIndex < TabControl1.TabCount -1 then
+    ChangeTabActionNext.Tab := TabControl1.Tabs[TabControl1.TabIndex + 1]
+  else
+    ChangeTabActionNext.Tab := nil;
+
+  if TabControl1.TabIndex > 0 then
+    ChangeTabActionPrev.Tab := TabControl1.Tabs[TabControl1.TabIndex - 1]
+  else
+    ChangeTabActionPrev.Tab := nil;
+end;
+
+procedure Tsekilas.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char;
+  Shift: TShiftState);
+begin
+if Key = vkHardwareBack then
+  begin
+    if TabControl1.TabIndex > 0 then
+    begin
+      TabControl1.TabIndex := TabControl1.TabIndex - 1 mod TabControl1.TabCount;
+      Key := 0;
+    end;
+  end;
+end;
+
+end.

@@ -1,0 +1,27 @@
+program Project2;
+
+uses
+  System.StartUpCopy,
+  FMX.MobilePreview,
+  FMX.Forms,
+  Unit4 in 'Unit4.pas' {Form4},
+  Unit1 in 'Unit1.pas' {sekilas},
+  Unit2 in 'Unit2.pas' {tari},
+  Unit3 in 'Unit3.pas' {musik},
+  Unit5 in 'Unit5.pas' {pakaian},
+  Unit6 in 'Unit6.pas' {arsitektur},
+  Unit7 in 'Unit7.pas' {makanan};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm4, Form4);
+  Application.CreateForm(Tsekilas, sekilas);
+  Application.CreateForm(Ttari, tari);
+  Application.CreateForm(Tmusik, musik);
+  Application.CreateForm(Tpakaian, pakaian);
+  Application.CreateForm(Tarsitektur, arsitektur);
+  Application.CreateForm(Tmakanan, makanan);
+  Application.Run;
+end.

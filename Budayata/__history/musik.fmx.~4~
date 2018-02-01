@@ -1,0 +1,260 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 615
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  DesignerMobile = True
+  DesignerWidth = 360
+  DesignerHeight = 640
+  DesignerDeviceName = 'Samsung Galaxy S4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object MediaPlayer1: TMediaPlayer
+    Left = 175
+    Top = 486
+  end
+  object TabControl1: TTabControl
+    FullSize = True
+    Height = 569.000000000000000000
+    Position.X = -1.000000000000000000
+    Position.Y = 46.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 7
+    TabPosition = Bottom
+    Width = 361.000000000000000000
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'alat Musik'
+      Width = 181.000000000000000000
+      object ListBox1: TListBox
+        Height = 233.000000000000000000
+        Position.Y = 72.000000000000000000
+        TabOrder = 0
+        Width = 361.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object ListBoxItem1: TListBoxItem
+          Height = 44.000000000000000000
+          StyleLookup = 'listboxitemdetaillabel'
+          TabOrder = 0
+          Text = 'Kacapi'
+          Width = 361.000000000000000000
+        end
+        object ListBoxItem2: TListBoxItem
+          TextSettings.Font.Size = 14.000000000000000000
+          Height = 44.000000000000000000
+          Position.Y = 44.000000000000000000
+          StyleLookup = 'listboxitemdetaillabel'
+          TabOrder = 1
+          Text = 'Suling'
+          Width = 361.000000000000000000
+        end
+        object ListBoxItem4: TListBoxItem
+          TextSettings.Font.Size = 14.000000000000000000
+          Height = 44.000000000000000000
+          Position.Y = 88.000000000000000000
+          StyleLookup = 'listboxitemdetaillabel'
+          TabOrder = 2
+          Text = 'Keso'#39' -  Keso'#39
+          Width = 361.000000000000000000
+        end
+        object ListBoxItem6: TListBoxItem
+          TextSettings.Font.Size = 14.000000000000000000
+          Height = 44.000000000000000000
+          Position.Y = 132.000000000000000000
+          StyleLookup = 'listboxitemdetaillabel'
+          TabOrder = 3
+          Text = 'Gendang'
+          Width = 361.000000000000000000
+        end
+        object SearchBox1: TSearchBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Width = 361.000000000000000000
+          Height = 48.000000000000000000
+        end
+      end
+      object Label2: TLabel
+        Height = 23.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 32.000000000000000000
+        Text = 'Jenis Alat Musik'
+        Width = 137.000000000000000000
+      end
+    end
+    object Agama: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'Lagu Daerah'
+      Width = 180.000000000000000000
+      object Label3: TLabel
+        Height = 23.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 32.000000000000000000
+        Text = 'Lagu Adat'
+        Width = 137.000000000000000000
+      end
+      object ListBox2: TListBox
+        Height = 249.000000000000000000
+        Position.X = 1.000000000000000000
+        Position.Y = 72.000000000000000000
+        TabOrder = 0
+        Width = 361.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object ListBoxItem7: TListBoxItem
+          Height = 44.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 0
+          Text = 'Pakarena'
+          Width = 361.000000000000000000
+          OnClick = ListBoxItem7Click
+        end
+        object ListBoxItem8: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 44.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 1
+          Text = 'Anging Mammiri'
+          Width = 361.000000000000000000
+          OnClick = ListBoxItem8Click
+        end
+        object ListBoxItem11: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 88.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 3
+          Text = 'Sulawesi Parasanganta'#39
+          Width = 361.000000000000000000
+          OnClick = ListBoxItem11Click
+        end
+        object ListBoxItem9: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 132.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 2
+          Text = 'Ana'#39' Kukang'
+          Width = 361.000000000000000000
+        end
+        object SearchBox2: TSearchBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Width = 361.000000000000000000
+          Height = 48.000000000000000000
+        end
+      end
+      object Label4: TLabel
+        Height = 23.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 336.000000000000000000
+        Text = 'Lagu Sedang Diputar :'
+        Width = 185.000000000000000000
+      end
+      object Label5: TLabel
+        Height = 23.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 360.000000000000000000
+        Text = 'Judul Lagu'
+        Width = 321.000000000000000000
+      end
+      object stop1: TSpeedButton
+        Height = 48.000000000000000000
+        Position.X = 64.000000000000000000
+        Position.Y = 428.000000000000000000
+        StyleLookup = 'stoptoolbutton'
+        Text = 'SpeedButton1'
+        Visible = False
+        Width = 48.000000000000000000
+        OnClick = stop1Click
+      end
+      object play2: TSpeedButton
+        Height = 48.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 428.000000000000000000
+        StyleLookup = 'playtoolbutton'
+        Text = 'play2'
+        Visible = False
+        Width = 48.000000000000000000
+        OnClick = play2Click
+      end
+      object play1: TSpeedButton
+        Height = 48.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 468.000000000000000000
+        StyleLookup = 'playtoolbutton'
+        Text = 'play1'
+        Visible = False
+        Width = 48.000000000000000000
+        OnClick = play1Click
+      end
+      object stop2: TSpeedButton
+        Height = 48.000000000000000000
+        Position.X = 64.000000000000000000
+        Position.Y = 468.000000000000000000
+        StyleLookup = 'stoptoolbutton'
+        Text = 'SpeedButton1'
+        Visible = False
+        Width = 48.000000000000000000
+        OnClick = stop2Click
+      end
+      object play3: TSpeedButton
+        Height = 48.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 388.000000000000000000
+        StyleLookup = 'playtoolbutton'
+        Text = 'play2'
+        Visible = False
+        Width = 48.000000000000000000
+        OnClick = play3Click
+      end
+      object stop3: TSpeedButton
+        Height = 48.000000000000000000
+        Position.X = 64.000000000000000000
+        Position.Y = 388.000000000000000000
+        StyleLookup = 'stoptoolbutton'
+        Text = 'stop3'
+        Visible = False
+        Width = 48.000000000000000000
+        OnClick = stop3Click
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    TintColor = claSeagreen
+    Width = 360.000000000000000000
+    object Label1: TLabel
+      Align = Center
+      Height = 23.000000000000000000
+      Text = 'Musik Tradisional'
+      Width = 148.000000000000000000
+    end
+    object Button1: TButton
+      Height = 48.000000000000000000
+      StyleLookup = 'arrowlefttoolbutton'
+      TabOrder = 1
+      Text = 'Button1'
+      Width = 48.000000000000000000
+    end
+  end
+end

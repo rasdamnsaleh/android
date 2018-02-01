@@ -1,0 +1,107 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'Form8'
+  ClientHeight = 615
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 360
+  DesignerHeight = 640
+  DesignerDeviceName = 'Samsung Galaxy S4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object lytForm: TLayout
+    Align = Horizontal
+    Height = 567.000000000000000000
+    Position.Y = 8.000000000000000000
+    Width = 360.000000000000000000
+    TabOrder = 1
+    object RectForm1: TRectangle
+      Align = Contents
+      Fill.Color = xFF2F2F2F
+      Height = 492.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 75.000000000000000000
+      Stroke.Kind = None
+      Width = 340.000000000000000000
+      object LblTitleForm: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Height = 49.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Position.Y = 20.000000000000000000
+        TextSettings.Font.Size = 35.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Tari Pakarena'
+        Width = 340.000000000000000000
+      end
+      object LblLoremIpsum: TLabel
+        Align = Client
+        StyledSettings = [Family]
+        Height = 423.000000000000000000
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 
+          'Tari Pakarena berasal dari Kabupaten Gowa, Makassar, Sulawesi Se' +
+          'latan. Dalam bahasa Gowa '#8216'pakarena'#8217' berasal dari kata '#8216'karena'#8217' y' +
+          'ang memiliki arti '#8216'main'#8217' sedangkan imbuhan '#8217'pa'#8217' berarti '#8217'pelakun' +
+          'ya'#8217'. Tari pakarena sering ditarikan keluarga kerabat Kerajaan Go' +
+          'wa sebagai bentuk kecintaan Sultan Hasanuddin (Raja Gowa Ke XVI)' +
+          ' pada tarian ini. Penari pakarena haruslah wanita yang berjumlah' +
+          ' empat sampai tujuh orang. Mengapa wanita? Karena tarian ini pad' +
+          'a dasarnya mencerminkan karakter wanita Gowa yang lembut, sopan,' +
+          ' setia, dan patuh. Mereka membalut keindahan gerakan tari Pakare' +
+          'na tersebut dalam kostum cerah berwarna merah, putih, hijau dan ' +
+          'kuning. Kostum lengkapnya tediri dari baju pahang (tenunan tanga' +
+          'n), lipa '#8217'sa'#8217' be (sarung sutra khas Sulawesi Selatan), dan perhi' +
+          'asan-perhiasan berupa kalung, gelang dan hiasan sanggul, dan tid' +
+          'ak boleh ketinggalan kipas berukuran besar.'
+        Width = 340.000000000000000000
+      end
+    end
+    object PieForm1: TPie
+      Align = Bottom
+      Fill.Color = xFF379F7F
+      Height = 150.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 417.000000000000000000
+      Width = 340.000000000000000000
+      EndAngle = 180.000000000000000000
+      object BtBack: TButton
+        Align = Center
+        Height = 48.000000000000000000
+        Margins.Top = 24.000000000000000000
+        StyleLookup = 'arrowuptoolbutton'
+        TabOrder = 0
+        Width = 48.000000000000000000
+      end
+    end
+    object FltAnimLytFormPositionY: TFloatAnimation
+      Duration = 0.500000000000000000
+      PropertyName = 'Position.Y'
+      StartValue = 0.000000000000000000
+      StopValue = -20.000000000000000000
+    end
+    object Pie1: TPie
+      Height = 50.000000000000000000
+      Position.X = 360.000000000000000000
+      Position.Y = 176.000000000000000000
+      Width = 50.000000000000000000
+      EndAngle = -90.000000000000000000
+    end
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+end

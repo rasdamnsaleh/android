@@ -1,0 +1,132 @@
+unit musik;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Edit, FMX.ListBox, FMX.Layouts, FMX.TabControl, FMX.Media;
+
+type
+  TForm4 = class(TForm)
+    MediaPlayer1: TMediaPlayer;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    ListBox1: TListBox;
+    ListBoxItem1: TListBoxItem;
+    ListBoxItem2: TListBoxItem;
+    ListBoxItem4: TListBoxItem;
+    ListBoxItem6: TListBoxItem;
+    SearchBox1: TSearchBox;
+    Label2: TLabel;
+    Agama: TTabItem;
+    Label3: TLabel;
+    ListBox2: TListBox;
+    ListBoxItem7: TListBoxItem;
+    ListBoxItem8: TListBoxItem;
+    ListBoxItem11: TListBoxItem;
+    play2: TSpeedButton;
+    play1: TSpeedButton;
+    play3: TSpeedButton;
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    Button1: TButton;
+    ListBoxItem3: TListBoxItem;
+    ListBoxItem5: TListBoxItem;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Button2: TButton;
+    procedure play3Click(Sender: TObject);
+    procedure play1Click(Sender: TObject);
+    procedure play2Click(Sender: TObject);
+    procedure stop3Click(Sender: TObject);
+    procedure stop1Click(Sender: TObject);
+    procedure stop2Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.fmx}
+
+uses Unit2;
+
+procedure TForm4.Button1Click(Sender: TObject);
+begin
+Form2.Show;
+Form4.Visible := false;
+MediaPlayer1.Stop;
+end;
+
+procedure TForm4.Button2Click(Sender: TObject);
+begin
+MediaPlayer1.Stop;
+Label4.Visible := false;
+Label5.Visible := false;
+Label6.Visible := false;
+end;
+
+procedure TForm4.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+MediaPlayer1.Stop;
+end;
+
+procedure TForm4.play1Click(Sender: TObject);
+var a : string;
+begin
+    a:='D:\PROGRAMMER\Budayata\Anging Mammiri.mp3';
+       mediaplayer1.FileName:=a;
+       mediaplayer1.play;
+       Label6.Visible := true;
+       Label5.Visible := false;
+       Label4.Visible := false;
+end;
+
+procedure TForm4.play2Click(Sender: TObject);
+var b : string;
+begin
+    b:='D:\PROGRAMMER\Budayata\sulawesi.mp3';
+       mediaplayer1.FileName:=b;
+       mediaplayer1.play;
+       Label5.Visible := true;
+       Label6.Visible := false;
+       Label4.Visible := false;
+end;
+
+procedure TForm4.play3Click(Sender: TObject);
+var c : string;
+begin
+    c:='D:\PROGRAMMER\Budayata\Pakarena_-_Makassar.mp3';
+       mediaplayer1.FileName:=c;
+       mediaplayer1.play;
+       Label4.Visible := true;
+       Label6.Visible := false;
+       Label5.Visible := false;
+end;
+
+procedure TForm4.stop1Click(Sender: TObject);
+begin
+MediaPlayer1.Stop;
+end;
+
+procedure TForm4.stop2Click(Sender: TObject);
+begin
+MediaPlayer1.Stop;
+end;
+
+procedure TForm4.stop3Click(Sender: TObject);
+begin
+MediaPlayer1.Stop;
+end;
+
+end.

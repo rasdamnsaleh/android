@@ -1,0 +1,97 @@
+object taripattenung: Ttaripattenung
+  Left = 0
+  Top = 0
+  Caption = 'Form11'
+  ClientHeight = 615
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 360
+  DesignerHeight = 640
+  DesignerDeviceName = 'Samsung Galaxy S4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object lytForm: TLayout
+    Align = Horizontal
+    Height = 567.000000000000000000
+    Position.Y = 8.000000000000000000
+    Width = 360.000000000000000000
+    TabOrder = 0
+    object RectForm1: TRectangle
+      Fill.Color = xFF2F2F2F
+      Height = 329.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 75.000000000000000000
+      Position.X = 10.000000000000000000
+      Stroke.Kind = None
+      Width = 340.000000000000000000
+      object LblTitleForm: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Height = 49.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Position.Y = 20.000000000000000000
+        TextSettings.Font.Size = 28.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Tari Pattenung'
+        Width = 340.000000000000000000
+      end
+      object LblLoremIpsum: TLabel
+        StyledSettings = [Family]
+        Height = 185.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 88.000000000000000000
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.FontColor = claWhite
+        Text = 
+          'Tari Patenung berasal dari Toraja, Sulawesi Selatan. Tari ini di' +
+          'pentaskan di konsulat Indonesia di Perth, Australia Barat pada h' +
+          'ari budaya Indonesia'
+        Width = 324.000000000000000000
+      end
+    end
+    object PieForm1: TPie
+      Fill.Color = xFFB0BBB8
+      Height = 143.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 256.000000000000000000
+      Width = 340.000000000000000000
+      EndAngle = 180.000000000000000000
+      object BtBack: TButton
+        Align = Center
+        Height = 48.000000000000000000
+        Margins.Top = 24.000000000000000000
+        StyleLookup = 'arrowuptoolbutton'
+        TabOrder = 0
+        Width = 48.000000000000000000
+        OnClick = BtBackClick
+      end
+    end
+    object FltAnimLytFormPositionY: TFloatAnimation
+      Duration = 0.500000000000000000
+      OnFinish = FltAnimLytFormPositionYFinish
+      PropertyName = 'Position.Y'
+      StartValue = 0.000000000000000000
+      StopValue = -20.000000000000000000
+    end
+    object Pie1: TPie
+      Height = 50.000000000000000000
+      Position.X = 360.000000000000000000
+      Position.Y = 176.000000000000000000
+      Width = 50.000000000000000000
+      EndAngle = -90.000000000000000000
+    end
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+  end
+end
